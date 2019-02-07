@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="add.js"></script>
+    </head>
+    <body>
+
+    <input type="number" id="one" value="">
+    <input type="number" id="two" value="">
+
+    <form>
+        <select id="options" >
+          <option value="add">Add</option>
+          <option value="sub">Subtract</option>
+          <option value="mult">Multiply</option>  
+          <option value="div">Divide</option>
+        </select>
+        <form>
+    <p id="demo"></p>
+
+    <script>
+    document.getElementById("options").onchange = function() {
+        var option = this.value;
+        var one = document.getElementById("one").value;
+        var two = document.getElementById("two").value;
+        var result = operation.compute(option,one,two);
+        document.getElementById("demo").innerHTML = result;
+    };
+    </script>
+
+    </body>
+</html>

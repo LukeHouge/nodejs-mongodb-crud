@@ -1,68 +1,15 @@
-Node.js, Express & MongoDB: Simple Add, Edit, Delete, View (CRUD)
-========
+# Test
+[![Build Status](https://travis-ci.org/LukeHouge/Testing.svg?branch=master)](https://travis-ci.org/LukeHouge/Testing)
+[![Coverage Status](https://coveralls.io/repos/github/LukeHouge/Testing/badge.svg?branch=master)](https://coveralls.io/github/LukeHouge/Testing?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d798a355610b4045a3aa55e26d537f1f)](https://app.codacy.com/app/LukeHouge/Testing-?utm_source=github.com&utm_medium=referral&utm_content=LukeHouge/Testing-&utm_campaign=Badge_Grade_Dashboard)
+[![dependencies Status](https://david-dm.org/lukehouge/Testing/status.svg)](https://david-dm.org/lukehouge/Testing)
+[![devDependencies Status](https://david-dm.org/lukehouge/Testing/dev-status.svg)](https://david-dm.org/lukehouge/Testing?type=dev)
 
-A simple and basic CRUD application (Create, Read, Update, Delete) using Node.js, Express, MongoDB & EJS Templating Engine.
-
-**Blog:** [Node.js, Express & MongoDB: Simple Add, Edit, Delete, View (CRUD)](http://blog.chapagain.com.np/node-js-express-mongodb-simple-add-edit-delete-view-crud/)
-
-**Start MongoDB server**
-
-```
-sudo service mongod start
-```
-
-**Check MongoDB server status**
-
-```
-sudo service mongod status
-```
-
-**Go to MongoDB shell**
-
-```
-mongod
-```
-
-**Show databases**
-
-```
-show dbs
-```
-
-**Create database named "test"**
-
-```
-use test
-```
-
-**Create collection(table) named "users"**
-
-```
-> db.users.insert({name:"Mukesh Chapagain", age:88, email:"mukesh@example.com"})
-> db.users.insert({name:"Raju Sharma", age:77, email:"raju@example.com"})
-> db.users.insert({name:"Krishna Yadav", age:65, email:"krishna@example.com"})
-```
-
-**Query collection**
-
-```
-> db.users.find().pretty()
-{
-	"_id" : ObjectId("5946517675f3fc671900a6c1"),
-	"name" : "Mukesh Chapagain",
-	"age" : 88,
-	"email" : "mukesh@example.com"
-}
-{
-	"_id" : ObjectId("5946517f75f3fc671900a6c2"),
-	"name" : "Raju Sharma",
-	"age" : 77,
-	"email" : "raju@example.com"
-}
-{
-	"_id" : ObjectId("5946518375f3fc671900a6c3"),
-	"name" : "Krishna Yadav",
-	"age" : 65,
-	"email" : "krishna@example.com"
-}
-```
+Super basic and quick code setup to test/learn CI/CD enviroment with the following tools:
+- Mocha as the testing framework for the nodeJS program
+- Chai as the assertion library
+- Travis-ci for the CI/CD tool automatically running Mocha for build errors resulting from unit tests
+- Istanbul to test coverage
+- Coveralls to display code coverage graphically
+- Codeacy to rate code of errors and vulnerabilties
+- Implementing it all together to display on this readme, and automatically propogate with Travis
